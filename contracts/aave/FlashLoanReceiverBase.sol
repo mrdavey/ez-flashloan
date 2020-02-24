@@ -8,8 +8,9 @@ import "openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol";
 import "./IFlashLoanReceiver.sol";
 import "./ILendingPoolAddressesProvider.sol";
 import "./EthAddressLib.sol";
+import "../utils/Withdrawable.sol";
 
-contract FlashLoanReceiverBase is IFlashLoanReceiver {
+contract FlashLoanReceiverBase is IFlashLoanReceiver, Withdrawable {
 
     using SafeERC20 for IERC20;
     using SafeMath for uint256;
