@@ -25,7 +25,7 @@ contract Flashloan is FlashLoanReceiverBase {
         transferFundsBackToPoolInternal(_reserve, totalDebt);
     }
 
-    function flashloan() public {
+    function flashloan() public onlyOwner {
         bytes memory data = "";
         uint amount = 1 ether;
         address asset = address(0x6B175474E89094C44Da98b954EedeAC495271d0F); // mainnet DAI

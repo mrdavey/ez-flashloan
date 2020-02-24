@@ -45,7 +45,6 @@ A barebones solidity template for Aave's flashloans
 
 ## Making it mainnet ready
 My recommendations would be:
- - Add a modifier so only you can call your flashloan contract
  - If doing arbitrage and taking profits, hardcode your profit taking address
 
 ## Deploying to mainnet
