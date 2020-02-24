@@ -14,7 +14,8 @@ contract FlashLoanReceiverBase is IFlashLoanReceiver {
     using SafeERC20 for IERC20;
     using SafeMath for uint256;
 
-    // See https://developers.aave.com/#the-lendingpooladdressesprovider. This address should not change.
+    // See https://developers.aave.com/#the-lendingpooladdressesprovider. This address should not change once deployed.
+    // The below address is for mainnet lending pool address provider
     ILendingPoolAddressesProvider public constant addressesProvider = ILendingPoolAddressesProvider(0x24a42fD28C976A61Df5D00D0599C34c4f90748c8);
 
     function () external payable { }

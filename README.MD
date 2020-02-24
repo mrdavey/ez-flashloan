@@ -11,6 +11,7 @@ A barebones solidity template for Aave's flashloans
 1. In `Flashloan.sol`, code your logic into the `executeOperation()` function
 2. When ready, call `flashloan()` on your contract
 3. Remember that your contract needs to have enough funds of whatever asset you are borrowing to payback the flashloan fee.
+4. If not deploying on mainnet, then change the `addressProvider` in `./aave/FlashLoanReceiverBase.sol` to the relevant address
 
 ## Set up
 1. Clone this repo and:
