@@ -45,9 +45,7 @@ A barebones solidity template for Aave's flashloans
 
 ## Making it mainnet ready
 My recommendations would be:
- - Add a modifier so only you can call your flashloan contract
  - If doing arbitrage and taking profits, hardcode your profit taking address
- - Implement a function to recover any ETH funds that are accidentally sent to this address
 
 ## Deploying to mainnet
 1. Rename `env` file to `.env` and include your infura key and deployment wallet private key (don't commit this file to Git!)
