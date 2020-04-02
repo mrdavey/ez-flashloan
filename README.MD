@@ -57,7 +57,7 @@ If you are working across protocols, such as using the flash loaned amount on an
 4. To minimise set up steps with Aave's lending pools, use Ganache's fork feature. This will 'fork' mainnet into your Ganache instance.
     Open terminal, replace `YOUR_INFURA_KEY` in the following and run:
     ```
-    ganache-cli --fork https://mainnet.infura.io/v3/YOUR_INFURA_KEY
+    ganache-cli --fork https://mainnet.infura.io/v3/YOUR_INFURA_KEY -i 1
     ``` 
 5. In a new terminal window in your repo directory, run:
     ```
@@ -76,6 +76,11 @@ If you are working across protocols, such as using the flash loaned amount on an
 
 8. If your implementation is correct, then the transaction will succeed. If it fails/reverts, a reason will be given.
     - if you didn't make any changes to this template and just deployed it, then the call to `f.flashloan()` will fail as the **contract** is not funded with any DAI, so cannot make the flashloan repayment (which includes the amount borrowed + a fee). Solve this by getting DAI (or the relevant asset) and transferring it to your **contract**.
+
+
+## Known issues
+ - If you are using Ganache to fork a network, then you may have issues with the blockchain archive state every 30 minutes. This is due to your node provider (i.e. Infura) only allowing free users access to 30 minutes of archive state. To solve this, upgrade to a paid plan, or simply restart your ganache instance and redploy your contracts.
+
 
 ## Debugging transactions
 ### Truffle Debugger
