@@ -116,5 +116,5 @@ Before deploying to mainnet:
 3. Deploy to mainnet with `truffle migrate --network mainnet`
 
 ## More information
- - [Official documentation](https://developers.aave.com/#implementing-a-flashloanreceiver-contract): This template is a bit different to the example as everything happens within this one contract, including the calling of `flashloan()`
- - [Contract addresses](https://developers.aave.com/#the-lendingpooladdressesprovider)
+ - [Official documentation](https://docs.aave.com/developers/tutorials/performing-a-flash-loan): For more details on performing a flash loan.
+ - [Contract addresses](https://docs.aave.com/developers/developing-on-aave/deployed-contract-instances): For a list of all the asset and contract address on mainnet and the testnets.
