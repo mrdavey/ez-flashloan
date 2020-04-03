@@ -25,8 +25,8 @@ If you do not need to work across protocols, such as simple flash loan testing, 
 2. In `truffle-config.js`, add the details of the [network you wish to use](https://www.trufflesuite.com/docs/truffle/reference/configuration), e.g. Ropsten. 
  - Important: make sure you are using an ethereum account that has enough ETH and token assets to pay back the loan. This is your `deployment account`
  - Rename `env` file to `.env` and include your infura key and `deployment account`'s private key (don't commit this file to Git!)
-3. In `Flashloan.sol`, line 31, change the asset address to the [relevant asset address](https://developers.aave.com/#the-lendingpooladdressesprovider) for the network you chose.
-4. In `./aave/FlashLoanReceiverBase.sol`, change the `addressProvider` to the [relevant LendingPoolAddressesProvider](https://developers.aave.com/#the-lendingpooladdressesprovider) for the network you chose.
+3. In `Flashloan.sol`, line 31, change the asset address to the [relevant asset address](https://docs.aave.com/developers/developing-on-aave/deployed-contract-instances) for the network you chose.
+4. In `./aave/FlashLoanReceiverBase.sol`, change the `addressProvider` to the [relevant LendingPoolAddressesProvider](https://docs.aave.com/developers/developing-on-aave/deployed-contract-instances) for the network you chose.
 5. In a terminal window in your repo directory, replace `NAME_OF_YOUR_NETWORK` with the network name from step 2 and run:
     ```
     truffle console --network NAME_OF_YOUR_NETWORK

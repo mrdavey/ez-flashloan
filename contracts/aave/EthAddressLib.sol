@@ -9,6 +9,6 @@ library EthAddressLib {
     * @return the address assigned to ETH
      */
     function ethAddress() internal pure returns(address) {
-        return 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE;
+        return 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE; // Represents ETH: https://docs.aave.com/developers/developing-on-aave/deployed-contract-instances#reserves-assets
     }
 }
