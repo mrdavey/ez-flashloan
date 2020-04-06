@@ -1,6 +1,6 @@
 // Original: https://github.com/aave/aave-protocol/blob/master/contracts/libraries/EthAddressLib.sol
 
-pragma solidity ^0.6.0;
+pragma solidity ^0.5.0;
 
 library EthAddressLib {
 
