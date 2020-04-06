@@ -19,7 +19,7 @@ contract FlashLoanReceiverBase is IFlashLoanReceiver, Withdrawable {
     // The below address is for mainnet lending pool address provider
     ILendingPoolAddressesProvider public constant addressesProvider = ILendingPoolAddressesProvider(0x24a42fD28C976A61Df5D00D0599C34c4f90748c8);
 
-    function () external payable { }
+    receive() external payable { }
 
     function transferFundsBackToPoolInternal(address _reserve, uint256 _amount) internal {
         address payable core = addressesProvider.getLendingPoolCore();
