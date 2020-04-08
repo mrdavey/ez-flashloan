@@ -11,13 +11,14 @@ import "./EthAddressLib.sol";
 import "../utils/Withdrawable.sol";
 
 contract FlashLoanReceiverBase is IFlashLoanReceiver, Withdrawable {
-
     using SafeERC20 for IERC20;
     using SafeMath for uint256;
 
-    // See https://docs.aave.com/developers/developing-on-aave/deployed-contract-instances. This address should not change once deployed.
-    // The below address is for mainnet lending pool address provider
-    ILendingPoolAddressesProvider public constant addressesProvider = ILendingPoolAddressesProvider(0x24a42fD28C976A61Df5D00D0599C34c4f90748c8);
+    ILendingPoolAddressesProvider public addressesProvider;
+
+    constructor(address _addressProvider) public {
+        addressesProvider = ILendingPoolAddressesProvider(_addressProvider);
+    }
 
     function() external payable { }
 

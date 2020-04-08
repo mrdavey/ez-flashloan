@@ -4,7 +4,9 @@ import "./aave/FlashLoanReceiverBase.sol";
 import "./aave/ILendingPoolAddressesProvider.sol";
 import "./aave/ILendingPool.sol";
 
-contract Flashloan is FlashLoanReceiverBase {
+// See https://docs.aave.com/developers/developing-on-aave/deployed-contract-instances. This address should not change once deployed.
+// The below address is for mainnet lending pool address provider
+contract Flashloan is FlashLoanReceiverBase(address(0x24a42fD28C976A61Df5D00D0599C34c4f90748c8)) {
 
     function executeOperation(
         address _reserve,
