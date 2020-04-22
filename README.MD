@@ -1,7 +1,11 @@
 # EZ-Flashloan
-A barebones solidity template for Aave's flashloans
+## This repo has been deprecated, in favor of the official [Flash Loans Truffle Box](https://github.com/aave/flashloan-box)
 
-## Join our #development channel on the [Aave Discord](https://discord.gg/fVaDMqT)
+---
+
+A barebones solidity (^0.5.15) template for Aave's flashloans
+
+### Join our #development channel on the [Aave Discord](https://discord.gg/fVaDMqT)
 
 ## Prerequisite
  - Basic knowledge of Solidity
