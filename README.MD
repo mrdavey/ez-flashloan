@@ -108,7 +108,7 @@ If you are working across protocols, such as using the flash loaned amount on an
     - Alternatively, see the below 'Testnet Debugging' section
 
 ### Testnet Debugging
-If your contracts are deployed to a testnet (or even mainnet), you can use a service such as [Tenderly](https://tenderly.dev/) to debug your transactions. You will get access to all the debugging features of Truffle Debugger + many more.
+If your contracts are deployed to a testnet (or even mainnet), you can use a service such as [Tenderly](https://tenderly.co/) to debug your transactions. You will get access to all the debugging features of Truffle Debugger + many more.
 
 ## Making it mainnet ready
 Before deploying to mainnet:
